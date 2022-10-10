@@ -14,17 +14,53 @@ th, td {
 }
 
 /*Display: inline-flex*/
-header, .menu-list {
-    display: inline-flex;
+/*header,main,footer*/
+header,main,footer {
+    min-width: 100%;
+    min-height: 100%;
 }
-header img {
+/*header*/
+header{
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: darkseagreen;
+}
+.logo{
     width: 5em;
 }
-/*menu*/
+/*Place the menu to the right of the page*/
 .menu {
+    /* margin: auto 0; */
+    align-items: flex-end;
+    margin: 5px 10px 0;
+}
+/* main */
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+/*Navbar*/
+.menu-list{
+    padding-right: 0 10px;
+    display: inline-flex;
+    list-style: none;
+}
+.menu-list li{
+    padding: 0 10px;
+    
 
 }
-/* footer*/
-footer p{
-    font-weight: bold;
+body{
+    background-color: rgb(163, 197, 163);
+}
+p{
+    text-align: center;
+}
+/* home */
+#home {
+    background-color:rgb(106, 151, 106);
+}
+header img{
+    width: 79px;
 }
